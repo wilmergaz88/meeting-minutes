@@ -89,6 +89,8 @@
             "dmg"
         ],
         "createUpdaterArtifacts": true,
+        "category": "Productivity",
+        "shortDescription": "Privacy-first AI meeting assistant",
         "icon": [
             "icons/icon.png",
             "icons/app_icon.icns",
@@ -101,6 +103,14 @@
             "binaries/llama-helper",
             "binaries/ffmpeg"
         ],
+        "linux": {
+            "deb": {
+                "desktopTemplate": "custom.desktop.hbs"
+            },
+            "appimage": {
+                "bundleMediaFramework": true
+            }
+        },
         "macOS": {
             "entitlements": "entitlements.plist",
             "signingIdentity": "-",
